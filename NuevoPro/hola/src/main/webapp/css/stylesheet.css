@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos de la tarjeta del producto principal */
+.card-producto {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos de la lupa */
+.lupa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Animación de aparición de la lupa */
+.card-producto:hover .lupa {
+    opacity: 1;
+}
+/* Estilo del contenedor del producto */
+.producto-container {
+    overflow: hidden;
+}
+
+/* Efecto de zoom al pasar el cursor */
+.producto-container:hover img {
+    transform: scale(1.2); /* Ajusta el valor según el nivel de zoom deseado */
+    transition: transform 0.5s ease; /* Agrega una transición suave */
+}
