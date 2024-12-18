@@ -6,11 +6,11 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fcc2bc;">
+    <div class="container-fluid" >
         <!-- Logo de la barra de navegación -->
-        <a class="navbar-brand" href="#">
-            <img src="img/shop.png" alt="Logo de la panadería" width="200" height="110">
+        <a class="navbar-brand" href="#" style="background-color: #ffa59c; border: 20">
+            <img src="img1/logo.png" alt="Logo de la panadería" width="180" height="110" style="background-color: #ffa59c; border: 20">
         </a>
 
         <!-- Contenedor del menú de navegación -->
@@ -25,15 +25,11 @@
                     
                 </li>
                 <!-- Otras opciones del menú -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PROMOCIONES</a>
-                </li>
+              
                 <li class="nav-item">
                     <a class="nav-link" href="#">TIENDAS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTOS</a>
-                </li>
+
             </ul>
 
          <!-- Barra de búsqueda -->
@@ -49,9 +45,7 @@
                     <i class="bi bi-cart"></i>
                     <span class="badge bg-primary"><%= session.getAttribute("numarticulos") %></span>
                 </a>
-                <span class="navbar-text" style="font-size: 18px;">
-                    TOTAL: $<%= session.getAttribute("total") %>
-                </span>
+              
             </div>
         </div>
     </div>

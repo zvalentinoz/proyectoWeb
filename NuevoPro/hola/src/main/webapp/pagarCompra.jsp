@@ -50,9 +50,9 @@
     MiSesion.setAttribute("Apellidos",null);
     MiSesion.setAttribute("Nombres",null);
 %>    
-<center>
+<center  style="background-color: #ffa59c;">
 	<h1>Gracias por su compra, regrese pronto ...</h1>
-	<img src=img/gracias.jpg />
+	<img src=img1/logo.png />
 	<a href="index.html">Ir a la Pagina Principal</a>
 	
 </center>

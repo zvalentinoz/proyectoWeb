@@ -39,7 +39,7 @@
 		out.print("ERROR :" + ex.getMessage());	
 	}
 %>
-<center>
+<center  style="background-color: #ffa59c;">
     <table class="table">
         <tr>
             <td colspan="6">DATOS DEL CLIENTE:<%=ObjC.getIdCliente()%>
@@ -82,5 +82,5 @@
     // Guardar el total a pagar
     MiSesion.setAttribute("Total", Total);
 %>        
-<a href="pagarCompra.jsp">Hacer Click para pagar la Compra</a>
+<a class="btn btn-primary" href="pagarCompra.jsp"> pagar la Compra</a>
 </center>

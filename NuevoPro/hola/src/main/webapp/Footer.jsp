@@ -2,24 +2,24 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="modelo.Categorias" %>
 <%@ page import="controller.CarritoBD" %>
-<footer class="footer bg-dark text-light py-5">
+<footer class="footer  text-light py-5" style="background-color: #ba645c;">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h3>Contactanos</h3>
-                <p>Correo electrónico: empresaShop@shop.com</p>
-                <p>Teléfono: +51 906 903 187</p>
+                <h3>Contacto</h3>
+                <p>Correo electrónico: TIendaCielo@gmail.com</p>
+                <p>Teléfono: +000001111</p>
             </div>
             <div class="col-md-4">
-                <h3>Redes Sociales</h3>
+                <h3>Red Social</h3>
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-light">Facebook</a></li>
-                    <li><a href="#" class="text-light">Twitter</a></li>
-                    <li><a href="#" class="text-light">Yootube</a></li>
+                    <li><a href="#" class="text-light">WhatSapp</a></li>
+                
                 </ul>
             </div>
             <div class="col-md-4">
-                <h3>Enlaces informativos</h3>
+                <h3>Acerca de nosotros</h3>
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-light">Política de Privacidad</a></li>
                     <li><a href="#" class="text-light">Términos de Servicio</a></li>
@@ -28,9 +28,7 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-12 text-center">
-                <p>&copy; 2024 SHOP. Todos los derechos reservados.</p>
-            </div>
+           
         </div>
     </div>
 </footer>

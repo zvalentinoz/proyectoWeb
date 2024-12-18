@@ -33,14 +33,14 @@
     
     
     
-<div style="border: 1px solid #ced4da; border-radius: 5px; overflow: hidden; max-width: 1550px; margin: 0 auto;">
+<div style="background-color: #ffa59c;"  style="border: 1px solid #ced4da; border-radius: 5px; overflow: hidden; max-width: 1550px; margin: 0 auto;">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/productos-carrusel1.jpg" class="d-block w-100" style="height: 530px;" alt="...">
+      <div class="carousel-item active" style="background-color: #ffa59c;">
+        <img src="img1/carrusel1.jpg" class="d-block w-100" style="height: 530px;" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="img/producto-carrusel2.jpg" class="d-block w-100" style="height: 530px;" alt="...">
+        <img src="img1/carrusel2.jpg" class="d-block w-100" style="height: 530px;" alt="...">
       </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -56,7 +56,7 @@
 <br>
 
 <!-- Encabezado -->
-<h2>Ofertas del día</h2>
+<h2>Nuestros Productos</h2>
 
 <% 
 for(Categorias c : Lista){
@@ -65,16 +65,16 @@ for(Categorias c : Lista){
 %>
 
 <!-- Sección de la categoría y carrusel de productos -->
-<section class="mb-4">
+<section class="mb-4" style="background-color: #ffa59c;">
     <div class="row">
         <!-- Columna para la categoría -->
-        <div class="col-md-6 mb-4">
-            <div class="card" style="width: 15rem; position: relative;">
+        <div class="col-md-6 mb-4" style="background-color: #ffa59c;">
+            <div class="card" style="width: 13rem; height:50;   position: relative;" style="background-color: #ffa59c;">
                 <!-- Enlace sobre la imagen -->
-                <a href="<%= enlace %>">
-                    <img src="img/<%= c.getImagen() %>" class="card-img-top" alt="">
+                <a href="<%= enlace %>" >
+                    <img src="img1/<%= c.getImagen() %>" class="card-img-top" alt="" style="background-color: #ffa59c;">
                 </a>
-                <div class="card-body">
+                <div class="card-body" style="background-color: #ffa59c;">
                     <!-- Contenido de la tarjeta -->
                     <!-- Puedes agregar contenido adicional si es necesario -->
                 </div>
@@ -90,21 +90,21 @@ for(Categorias c : Lista){
             for(Productos producto : productos){
             %>
             <!-- Agrupar cada 3 productos en un div "carousel-item" para mostrar horizontalmente -->
-            <% if (count % 2 == 0) { %>
+            <% if (count % 4 == 0) { %>
                 <div class="carousel-item <%= count == 0 ? "active" : "" %>">
                     <div class="d-flex justify-content-around">
             <% } %>
                         <!-- Tarjeta de producto -->
-                        <div class="card" style="width: 19rem;">
-                            <img src="img/<%= producto.getImagen() %>" class="card-img-top" alt="...">
-                            <div class="card-body">
+                        <div class="card" style="width: 19rem;"  >
+                            <img src="img1/<%= producto.getImagen() %>" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #ffa59c;">
                                 <h5 class="card-title"><%= producto.getDescripcion() %></h5>
                                 <p class="card-text">Precio: <%= producto.getPrecioUnidad() %></p>
                                 <!-- Puedes agregar más información del producto aquí si lo deseas -->
                             </div>
                         </div>
             <% count++;
-               if (count % 2 == 0 || count == productos.size()) { %>
+               if (count % 4 == 0 || count == productos.size()) { %>
                     </div>
                 </div>
             <% } %>
@@ -112,14 +112,7 @@ for(Categorias c : Lista){
         </div>
         
         <!-- Botones de navegación del carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos<%= c.getIdCategoria() %>" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos<%= c.getIdCategoria() %>" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        
     </div>
 </div>
        

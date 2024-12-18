@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa; /* Color de fondo */
+            background-color: #fcc2bc;; /* Color de fondo */
             padding-top: 50px; /* Espacio superior */
         }
         .container {
@@ -80,9 +80,9 @@
                 <label class="form-label">Stock</label>
                 <p class="form-control-static"><%=ObjP.getStock()%></p>
             </div>
-            <div class="mb-3">
+            <div class="mb-3"  style="width: 150">
                 <label class="form-label">Imagen</label>
-                <img src="img/<%=ObjP.getImagen()%>" alt="<%=ObjP.getDescripcion()%>" class="img-fluid">
+                <img src="img1/<%=ObjP.getImagen()%>" alt="<%=ObjP.getDescripcion()%>" class="img-fluid">
             </div>
             <div class="mb-3">
                 <label for="txtcan" class="form-label">Cantidad</label>
@@ -90,7 +90,7 @@
             </div>
             <input type="submit" class="btn btn-primary" value="Añadir al Carrito" />
         </form>
-        <a href="javascript:history.back()">Seleccionar Otro Producto</a>
+        <a class="btn btn-primary" href="javascript:history.back()">Seleccionar Otro Producto</a>
     </div>
 </body>
 </html>

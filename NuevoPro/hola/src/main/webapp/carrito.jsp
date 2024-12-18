@@ -113,15 +113,15 @@
                         tabla += "<td>"+(i+1)+"</td>";
                         tabla += "<td>"+Obj.getIdProducto()+"</td>";
                         tabla += "<td>"+Obj.getDescripcion()+"</td>";
-                        tabla += "<td><img src=img/"+Obj.getImagen()+
+                        tabla += "<td><img src=img1/"+Obj.getImagen()+
                                 " width=50 heigth=50></td>";
                         tabla += "<td>"+Precio+"</td>";
                         tabla += "<td>"+Cantidad+"</td>";
                         tabla += "<td>"+SubTotal+"</td>";
-                        tabla += "<td><a href="+enlace+">Suprimir</a></td>";
+                        tabla += "<td><a href="+enlace+">Eliminar</a></td>";
                     tabla +="</tr>";
                 }
-                tabla += "<tr bgcolor=Yellow><th colspan=6>TOTAL GENERAL</th><th>"+Total+"</th><th></th></tr>";
+                tabla += "<tr bgcolor=Yellow><th colspan=6>TOTAL EN VENTAS</th><th>"+Total+"</th><th></th></tr>";
                 tabla += "<tr><td colspan=8 align=center>[ "+enlace1+" ][ "+enlace2+" ][ "+enlace3+"]</td></tr>";
             tabla += "</table>";
             out.print(tabla);

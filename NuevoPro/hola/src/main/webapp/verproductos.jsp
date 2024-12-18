@@ -65,16 +65,16 @@
         listaProductos = carritoBD.ListarProductos(idCat);
 %>  
 
-<h1 class="text-center"><%= categoria.getDescripcion() %></h1>
-<div class="row justify-content-center card-container">
+<h1 style="background-color: #fcc2bc;" class="text-center"><%= categoria.getDescripcion() %></h1 >
+<div class="row justify-content-center card-container" style="background-color: #fcc2bc;">
 <%
     for(Productos producto : listaProductos) {
 %>
         <div class="col-md-4">
             <div class="card mx-auto">
                 <div class="magnify">
-                    <img src="img/<%= producto.getImagen() %>" class="card-img-top" alt="<%= producto.getDescripcion() %>">
-                    <div class="lupa-icon">🔍</div>
+                    <img src="img1/<%= producto.getImagen() %>" class="card-img-top" alt="<%= producto.getDescripcion() %>">
+                    <div class="lupa-icon"></div>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title text-center">Precio: $<%= producto.getPrecioUnidad() %></h5>

@@ -11,32 +11,31 @@
     </style>
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4">
+    <div class="container d-flex justify-content-center align-items-center vh-100" style="background-color: #ffa59c;">
+        <div class="card p-4" style="background-color: #ffa59c;">
             <div class="text-center mb-4">
-                <img src="img/shop.png" alt="Logo" width="100" height="100" class="mb-2"> <!-- Logotipo arriba del título -->
-                <h1 class="mb-0">Tienda Ventas</h1> <!-- Título -->
+                <img src="img1/logo.png" alt="logo" width="100" height="100" class="mb-2"> <!-- Logotipo arriba del título -->
+                <h1 class="mb-0">Dulce Milagros</h1> <!-- Título -->
             </div>
             
             <form action="verificauser.jsp">
                 <div class="mb-3">
-                    <label for="txtid" class="form-label">IdUsuario</label>
+                    <label for="txtid" class="form-label">Identificador de Usuario</label>
                     <input type="text" class="form-control" id="txtid" name="txtid">
                 </div>
                 <div class="mb-3">
-                    <label for="txtpass" class="form-label">Password</label>
+                    <label for="txtpass" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="txtpass" name="txtpass">
                 </div>
                 
                 <div class="mb-3">
-                    <label for="cboClase" class="form-label">Clase</label>
+                    <label for="cboClase" class="form-label">Tipo Usuario</label>
                     <select class="form-select" id="cboClase" name="cboClase">
                         <option value='U'>Usuario</option>
-                        <option value='A'>Administrador</option>
                     </select>
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Validar</button>
+                <button type="submit" style="background-color: green">Validar</button>
             </form>
         </div>
     </div>

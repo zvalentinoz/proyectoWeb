@@ -10,7 +10,7 @@
 		<title>Verificar Usuario</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	</head>
-<body>
+<body style="background-color: #ffa59c;">
 	<%	CarritoBD ObjBD = new CarritoBD();
 		Clientes ObjC = new Clientes();
 		HttpSession MiSesion = null;
@@ -22,8 +22,8 @@
 		    Tipo = request.getParameter("cboClase").toString();
 		    // Verificar si existe en la tabla Clientes
 		    if(!ObjBD.VerificaUsuario(IdCliente, Password)){
-		        out.print("=== ERROR EN USUARIO O CONTRASEÑA ===");
-		        out.print("<br><a href=index.html>Identificarse otra vez</a>");
+		        out.print("!!!!!!Error en iniciar session algo va mal");
+		        out.print("<a width:100  href=index.html>Intentar de nuevo</a>");
 		    }else{
 		    	// Recupera datos del clientes
 		    	ObjC = ObjBD.InfoCliente(IdCliente);
